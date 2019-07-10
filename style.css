@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+header {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "hero-text";
+  grid-template-rows: 1fr 5fr;
+  background: url(images/coverimage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  align-items: flex-end;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  padding: 0 25px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+li:hover {
+  background-color: rgba(204, 204, 204, 0.7);
+}
+
+.header-logo p {
+  font-size: 29px;
+  color: white;
+}
+
+.hero-text {
+  display: grid;
+  /* padding-top: 50px; */
+  text-align: center;
+  /* flex-direction: column; */
+  font-size: 17px;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+h1 {
+  font-size: 90px;
+  /* padding-bottom: 25px; */
+  font-weight: 200;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: end;
+}
+
+.hero-text div {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  align-self: start;
+}
+p {
+  font-size: 17px;
+  color: gray;
+}
+
+.hero-text p {
+  color: white;
+}
+.button {
+  margin-top: 45px;
+  padding: 28px 60px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  border: transparent;
+  background: #228B22;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: rgba(204, 204, 204, 0.4);
+}
+
+button:hover {
+  background-color: #325dff;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 1fr;
+}
+
+.section-same {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 80px;
+}
+
+.text-image-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "text image";
+  background-color: #fff;
+}
+
+.aside-text {
+  grid-area: text;
+  padding: 100px 60px;
+  font-weight: 200;
+}
+
+.aside-text p {
+  margin-top: 45px;
+  font-size: 17px;
+  color: #979595;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.aside-image {
+  grid-area: image;
+  background: url(images/image4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inverted {
+  grid-template-areas: "image text";
+}
+
+h3 {
+  font-size: 35px;
+  padding: 15px;
+}
+
+.info {
+  text-align: center;
+  padding: 0 90px;
+  font-size: 17px;
+}
+
+.card-section {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+  padding: 100px 80px;
+  text-align: center;
+  grid-gap: 35px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  border: 1px solid rgb(231, 230, 230);
+  height: 280px;
+  align-items: end;
+  padding: 50px;
+  background-color: #fff;
+}
+
+i {
+  font-size: 70px;
+  color: rgb(231, 230, 230);
+}
+
+.cards i {
+  color: #228B22;
+}
+
+a i:hover {
+  font-size: 80px;
+  color: rgba(255, 242, 242, 0.7);
+}
+
+.iframe-section {
+  display: grid;
+  grid-template-rows: 70px auto;
+  height: 600px;
+  background: url(images/image6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  grid-gap: 50px;
+}
+
+.iframe-section div > * {
+  color: rgb(231, 230, 230);
+}
+
+.iframe-section div p {
+  font-weight: bold;
+}
+
+.overflow {
+  box-shadow: inset 0 0 0 1000px rgba(29, 29, 29, 0.4);
+  transition: 0.5s;
+}
+
+.other {
+  padding-bottom: 80px;
+}
+
+.image-1 {
+  background: url(images/image5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-2 {
+  background: url(images/image1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-3 {
+  background: url(images/image2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  background-color: #228B22;
+  padding: 50px;
+  color: #fff;
+  font-size: 25px;
+}
