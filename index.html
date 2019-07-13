@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,12 +17,12 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- Header Section __ Navigation Section -->
     <header>
       <nav>
         <div class="header-logo">
-          <p>Landings</p>
+          <p>Forest</p>
         </div>
         <ul>
           <li><a href="#">Work</a></li>
@@ -31,7 +31,7 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-      <!-- Hero-text Section-->
+      
       <section class="hero-text">
         <h1>Go Green</h1>
         <div>
@@ -43,11 +43,8 @@
         </div>
       </section>
     </header>
-    <!-- Main Section -->
     <main>
-      <!-- First Section -->
       <section class="section-same">
-        <!-- Text-Image-Section __ Same Format as last Section -->
         <section class="text-image-section">
           <aside class="aside-text">
             <h2>Save the planet. Let's make it better for you and I</h2>
@@ -58,7 +55,6 @@
           </aside>
           <aside class="aside-image"></aside>
         </section>
-        <!-- Text Section beneath text-image-section -->
         <div class="info">
           <h3>Save the planet. Let's make it better for you and I</h3>
           <p>
@@ -66,45 +62,43 @@
           </p>
         </div>
       </section>
-      <!-- Second Section __ Card-Section -->
-      <section class="card-section">
-        <!-- Total of six cards with same styling -->
-        <div class="cards">
-          <i class="fas fa-seedling"></i>
-          <h4>Plant</h4>
-          <p>
-            A greener world is a better world.
-          </p>
-        </div>
-        <div class="cards">
+          <section class="cards">
+                  <div class="card-1">
+              <i class="fas fa-seedling"></i>
+              <h4>Plant</h4>
+              <p>
+                A greener world is a better world.
+              </p>
+            </div>
+        <div class="card-2">
           <i class="fas fa-tree"></i>
           <h4>Grow</h4>
           <p>
             A greener world is a better world.
           </p>
         </div>
-        <div class="cards">
-          <i class="fas fa-shield-alt"></i>
-          <h4>Protect</h4>
-          <p>
-            A greener world is a better world.
-          </p>
-        </div>
-        <div class="cards">
+              <div class="card-3">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Protect</h4>
+                <p>
+                  A greener world is a better world.
+                </p>
+              </div>
+          <div class="card-4">
           <i class="fas fa-hands-helping"></i>
           <h4>Support</h4>
           <p>
             A greener world is a better world.
           </p>
         </div>
-        <div class="cards">
-          <i class="fas fa-hand-holding-usd"></i>
-          <h4>Donate</h4>
-          <p>
-            A greener world is a better world.
-          </p>
-        </div>
-        <div class="cards">
+              <div class="card-5">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h4>Donate</h4>
+                <p>
+                  A greener world is a better world.
+                </p>
+              </div>
+          <div class="card-6">
           <i class="far fa-handshake"></i>
           <h4>Patner</h4>
           <p>
@@ -112,8 +106,7 @@
           </p>
         </div>
       </section>
-      <!-- Third Section __ Same as First Section __ Picture Background __ iframe Video __ with overlay -->
-      <section class="section-same">
+            <section class="section-same">
         <section class="iframe-section">
          <div class="info">
             <h3>Go Green</h3>
@@ -131,8 +124,7 @@
           </p>
         </div>
       </section>
-      <!-- last Section __ Same as Text-Image-Section -->
-      <section class="section-4">
+            <section class="section-4">
         <section class="text-image-section">
           <aside class="aside-text">
             <h2>Save the planet. Let's make it better for you and I</h2>
@@ -143,8 +135,7 @@
           </aside>
           <aside class="aside-image image-1"></aside>
         </section>
-        <!-- Inverted Section -->
-        <section class="text-image-section inverted">
+               <section class="text-image-section inverted">
           <aside class="aside-text">
             <h2>Save the planet. Let's make it better for you and I</h2>
             <p>
@@ -169,17 +160,5 @@
     <footer>
       Copyrights 2019. All Rights Reserved.
     </footer>
-
-    <script>
-      // javascript for overlay animation
-      let hov = document.querySelector(".icon");
-      let frame = document.querySelector(".iframe-section");
-      hov.addEventListener("mouseenter", () => {
-        frame.classList = "iframe-section overflow";
-      });
-      hov.addEventListener("mouseout", () => {
-        frame.classList = "iframe-section";
-      });
-    </script>
   </body>
 </html>
